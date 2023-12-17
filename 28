@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int year;
+
+    // Введення номеру року від користувача
+    cout << " the year number: ";
+    cin >> year;
+
+    // Перевірка на високосний рік
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        cout << "In the specified year " << year << " - Leap year. Number of days: 366\n";
+    } else {
+        cout << "In the specified year " << year << " - Ordinary. Number of days: 365\n";
+    }
+
+    return 0;
